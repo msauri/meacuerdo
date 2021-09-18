@@ -1,0 +1,34 @@
+body{
+    background-color: antiquewhite;
+}
+h1{
+    font-family: monospace;
+    font-size: 32px;
+    text-align: center;
+    vertical-align: middle;
+    color: rgb(54, 54, 54) ;
+    
+}
+
+a{
+    font-family: monospace;
+    color: rgb(54, 54, 54);
+    border: 2px solid rgb(54, 54, 54);
+    border-radius: 4px;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+.container{
+    padding-top: 10vh;
+    width: 100%;
+    text-align: center;
+
+}
+p{
+    font-family: monospace;
+    text-align: justify;
+    width: 50vw;
+    line-height: 1.6;
+    text-indent: 4%;
+    margin-left: 25vw;
+}
