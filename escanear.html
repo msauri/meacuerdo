@@ -34,11 +34,14 @@
 </head>
 
 <script>
-    AFRAME.registerComponent('markerhandler', {
-      init: function () {
-          var marker = this.el;
-        this.el.sceneEl.addEventListener('markerFound', () => {
-            switch (marker.id){
+
+AFRAME.registerComponent('registerevents', {
+    init: function () {
+      const marker = this.el;
+      marker.addEventListener("markerFound", ()=> {
+        var markerId = marker.id;
+        console.log('Marker Found: ', markerId);
+        switch (marker.id){
                 case "club":
                     window.location = "video0.html"
                 break;
@@ -58,12 +61,48 @@
                     window.location = 'video5.html'
                 break;
                 case 'seis':
-                   console.log(marker)
+                   window.location = 'video6.html'
                 break;
-            }
+                default: window.location = 'index.html'
+            
+        }
+      });
+
+    },
+  });
+ /*   AFRAME.registerComponent('markerhandler', {
+      init: function () {
+          var marker = this.el;
+        this.el.sceneEl.addEventListener('markerFound', () => {
+
+          console.log(markerFound.id)
+>            switch (marker.id){
+                case "club":
+                    window.location = "video0.html"
+                break;
+                case "uno":
+                    window.location = "video1.html"
+                break;
+                case 'dos':
+                   window.location='video2.html'
+                break;
+                case 'tres':
+                    window.location= 'video3.html'
+                break;
+                case 'cuatro':
+                  window.location = 'video4.html'
+                break;
+                case 'cinco': 
+                    window.location = 'video5.html'
+                break;
+                case 'seis':
+                   window.location = 'video6.html'
+                break;
+                default: window.location = 'index.html'
+            
         })
       }
-    });
+    });}*/
   </script>
   
   <body style="margin : 0px; overflow: hidden;">
@@ -86,42 +125,42 @@
     </a-nft>
 
  <a-nft
-  markerhandler
+  registerevents
   id= "uno"
   type="nft"
   url="marker1/uno"
 >
 </a-nft>
 <a-nft
-markerhandler
+registerevents
 id= "dos"
 type="nft"
 url="marker1/dos"
 >
 </a-nft>
 <a-nft
-markerhandler
+registerevents
 id= "tres"
 type="nft"
 url="marker1/tres"
 >
 </a-nft>
 <a-nft
-markerhandler
+registerevents
 id= "cuatro"
 type="nft"
 url="marker1/cuatro"
 >
 </a-nft>
 <a-nft
-markerhandler
+registerevents
 id= "cinco"
 type="nft"
 url="marker1/cinco"
 >
 </a-nft>
 <a-nft
-markerhandler
+registerevents
 id= "seis"
 type="nft"
 url="marker1/seis"
@@ -134,3 +173,14 @@ url="marker1/seis"
   </body>
 
 </html>
+
+
+
+<!-- 
+        <a-nft
+            videohandler
+            type='nft' url='./meacuerdo/marker1/marker1'
+            smooth="true" smoothCount="10" smoothTolerance="0.01" smoothThreshold="5"
+        >
+      cambiarlos para que levante github
+      -->
