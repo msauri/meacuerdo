@@ -32,3 +32,39 @@ p{
     text-indent: 4%;
     margin-left: 25vw;
 }
+.videos{
+    position: absolute;
+    top: 10%;
+    height: 98%;
+    width: 98%;
+    overflow: hidden;
+    align-content: center;
+}
+.video{
+max-width: 95%;
+max-height: 90%;
+display: block;
+margin: auto;
+
+}
+
+footer{
+    position: fixed;
+    bottom: 4%;
+    right: 4%
+
+}
+audio{
+display: block;
+margin: 0 auto;
+}
+
+img{
+
+max-width: 85%;
+max-height: 80%;
+display: block;
+margin: auto;
+top: 100%;
+        
+}
